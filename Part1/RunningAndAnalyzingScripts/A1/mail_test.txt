@@ -1,0 +1,3 @@
+>   This is a line in the email
+>>     This is a long email line that should be formatted and wrapped after 70 characters or so.          
+   Another line with too many spaces and tabs	

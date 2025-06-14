@@ -1,0 +1,17 @@
+#! /bin/bash
+# rn.sh
+# Very simpleminded filename "rename" utility (based on "lowercase.sh").
+#
+# The "ren" utility, by Vladimir Lanin (lanin@csd2.nyu.edu),
+#+ does a much better job of this.
+ARGS=2 #Script expects 2 arguments (old format)(new format)
+E_BADARGS=85 #Exit status for wrong arg count
+ONE=1 # For getting singular/plural right (see below).
+if [ $# -ne "$ARGS" ] #checks number of arguments entered
+then
+echo "Usage: `basename $0` old-pattern new-pattern" #Print usage in case of wrong arg counter
+
+# As in "rn gif jpg", which renames all gif files in working directory to jpg.
+exit $E_BADARGS
+fi
+number=0 # Keeps track of how many files actually renamed.Lat
