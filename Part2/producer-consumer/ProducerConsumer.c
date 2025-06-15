@@ -28,7 +28,7 @@ int main(){
 
     pthread_mutex_destroy(&mutex);
     sem_destroy(&empty);
-    sem_destory(&full);
+    sem_destroy(&full);
 
     return 0;
 }
